@@ -22,7 +22,7 @@ local Window = Rayfield:CreateWindow({
       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
    },
 
-   KeySystem = true, -- Set this to true to use our key system
+   KeySystem = false, -- Set this to true to use our key system
    KeySettings = {
       Title = "Tem chave meu patrão",
       Subtitle = "Key System",
@@ -86,6 +86,13 @@ local Button = MiscTab:CreateButton({
    Name = "Admin",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+   end,
+})
+
+local Button = MiscTab:CreateButton({
+   Name = "Rael Hub",
+   Callback = function()
+   loadstring(game:HttpGet"https://raw.githubusercontent.com/Laelmano24/Rael-Hub/main/main.txt")()
    end,
 })
 
